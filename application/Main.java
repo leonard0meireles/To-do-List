@@ -1,5 +1,6 @@
 import model.entities.Task;
 import model.entities.TaskStatus;
+import model.utils.LinkedList;
 
 public class Main {
     public static void main(String[] args){
@@ -8,5 +9,9 @@ public class Main {
 
         System.out.println(task1);
         System.out.println(task2);
+
+        LinkedList<Task> tasks = new LinkedList<>();
+        
+        System.out.println("Is the list empty? " + tasks.isEmpty());
     }
 }
